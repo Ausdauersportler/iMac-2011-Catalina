@@ -22,6 +22,6 @@
 [Catalina Package Installer](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/page-421?post=29144691#post-29144691)
 
 #### Credit:
-- Fix/Patch: [dosdude1](https://forums.macrumors.com/members/dosdude1.669685/), [AsentientBot](https://forums.macrumors.com/members/asentientbot.1135186/)
-- Tester: chris1111, C.Frio, arqueox, Screenz, highvoltage12v
-- Packager: Ausdauersportler
+- Fix/Patch: [dosdude1](https://forums.macrumors.com/members/dosdude1.669685/), [highvoltage12v](https://forums.macrumors.com/members/highvoltage12v.883629/)
+- Tester: chris1111, C.Frio, arqueox, Screenz, [highvoltage12v](https://forums.macrumors.com/members/highvoltage12v.883629/), [Ausdauersportler] (https://forums.macrumors.com/members/ausdauersportler.1199136/)
+- Packager: [Ausdauersportler] (https://forums.macrumors.com/members/ausdauersportler.1199136/)
