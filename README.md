@@ -23,5 +23,5 @@
 
 #### Credit:
 - Fix/Patch: [dosdude1](https://forums.macrumors.com/members/dosdude1.669685/), [highvoltage12v](https://forums.macrumors.com/members/highvoltage12v.883629/)
-- Tester: chris1111, C.Frio, arqueox, Screenz, [highvoltage12v](https://forums.macrumors.com/members/highvoltage12v.883629/), [Ausdauersportler] (https://forums.macrumors.com/members/ausdauersportler.1199136/)
-- Packager: [Ausdauersportler] (https://forums.macrumors.com/members/ausdauersportler.1199136/)
+- Tester: chris1111, C.Frio, arqueox, Screenz, [highvoltage12v](https://forums.macrumors.com/members/highvoltage12v.883629/), [Ausdauersportler](https://forums.macrumors.com/members/ausdauersportler.1199136/) 
+- Packager: [Ausdauersportler](https://forums.macrumors.com/members/ausdauersportler.1199136/)
