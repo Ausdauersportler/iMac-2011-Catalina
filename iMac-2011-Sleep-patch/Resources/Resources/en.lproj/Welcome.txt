@@ -1,0 +1,31 @@
+iMac 2011 Sleep patch
+This is a Fix for Graphics Intel HD 3000 and NEW NVIDIA Graphics for macOS Catalina 10.15++ (*****)
+
+Support Graphics Intel HD 3000. Nvidia Kepler and Graphics cards
+Hardware Support:
+iMac 2011 12,1 12,2 HD3000, SNB, AppleGVA Sleep & H.264 iGPU
+iMac 2009/2010 11,x BacklightFixup, FakeSMC, vit9696 ONLY
+iMac 2009/2010/2011 AppleGraphicsControl plist patch
+
+
+Install /System/Library/Extensions/
+AppleIntelHD3000Graphics.kext
+AppleIntelHD3000GraphicsGA.plugin
+AppleIntelHD3000GraphicsGLDriver.bundle
+AppleIntelHD3000GraphicsVADriver.bundle
+AppleIntelSNBGraphicsFB.kext
+AppleIntelSNBVA.bundle
+IOSurface.kext
+AppleMCCSControl.kext
+FakeSMCKeyStore.kext
+FakeSMC_GPUSensonrs.kext
+FakeSMC_CPUSensonrs.kext
+Lilu.kext
+WhateverGreen.kext
+AppleBacklightFixup.kext
+
+Install /System/Library/PrivateFrameworks/
+AppleGVA.framework
+
+For macOS Catalina 10.15.4+ Install ➣ /Library/Preferences/com.apple.security.libraryvalidation.plist
+NOTE: Make sure for this version that the SIP is totally disable

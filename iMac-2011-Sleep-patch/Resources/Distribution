@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.apple.pkgbuild" authoringToolVersion="681">
+    <title>iMac 2011 Sleep patch</title>
+    <options customize="allow" allow-external-scripts="no"/>
+    <domains enable_anywhere="true"/>
+    <installation-check script="pm_install_check();"/>
+    <script>function pm_install_check() {
+  if(!(/* &gt;= */ system.compareVersions(system.version.ProductVersion, '10.15.4') &gt;= 0)) {
+    my.result.title = 'Failure';
+    my.result.message = 'This programm works for macOS Catalina 10.15.4 and above. Use on macOS Catalina 10.15 xxx and install only on macOS Catalina 10.15';
+    my.result.type = 'Fatal';
+    return false;
+  }
+  return true;
+}
+</script>
+    <background file="background.png" alignment="center" scaling="tofit"/>
+    <background-darkAqua file="background.png" alignment="center" scaling="tofit"/>
+    <welcome file="Welcome.txt"/>
+    <readme file="ReadMe.rtfd"/>
+    <choices-outline>
+        <line choice="choice43">
+            <line choice="choice77"/>
+            <line choice="choice78"/>
+            <line choice="choice80"/>
+            <line choice="choice81"/>
+            <line choice="choice82"/>
+            <line choice="choice90"/>
+            <line choice="choice91"/>
+        </line>
+    </choices-outline>
+    <choice id="choice43" title="iMac 2011 Sleep patch" description="iMac 2011 Sleep patch This is a Fix for Graphics Intel HD 3000 and fix NEW NVIDIA Graphics for macOS Catalina 10.15++ (*****) Support Graphics Intel HD 3000. Support: iMac 12,2 with metal enabled GPU" start_selected="false">
+        <pkg-ref id="de.mtb11.iMac2011SleepPatch.Install.pkg"/>
+    </choice>
+    <choice id="choice77" title="iMac 2011 Sleep patch (10.14++)" description="iMac 2011 Sleep patch This is a Fix for Graphics Intel HD 3000 and NEW NVIDIA Graphics for macOS Mojave and Catalina 10.14++ (*****) Support Graphics Intel HD 3000. Support: iMac 12,x with metal enabled Nvidia GPU  Install /System/Library/Extensions/ AppleIntelHD3000Graphics.kext AppleIntelHD3000GraphicsGA.plugin AppleIntelHD3000GraphicsGLDriver.bundle AppleIntelHD3000GraphicsVADriver.bundle AppleIntelSNBGraphicsFB.kext AppleIntelSNBVA.bundle IOSurface.kext AppleMCCSControl.kext
+For macOS Catalina 10.15.4+ Install /Library/Preferences/com.apple.security.libraryvalidation.plist
+NOTE: Make sure for this version that the SIP is totally disabled!" start_selected="false">
+        <pkg-ref id="de.mtb11.iMac2011SleepPatch.HD3000.pkg"/>
+    </choice>
+    <choice id="choice78" title="iMac 2011 Catalina Sleep patch (10.15++)" description="iMac 2011 Sleep patch This is a Fix for Graphics Intel HD 3000 and NEW NVIDIA Graphics for macOS Catalina 10.15++ (*****) Support Graphics Intel HD 3000. Support: iMac 12,x with metal enabled Nvidia GPU  Install IOSurface.kext AppleMCCSControl.kext
+For macOS Catalina 10.15.4+ Install /Library/Preferences/com.apple.security.libraryvalidation.plist
+NOTE: Make sure for this version that the SIP is totally disabled!" start_selected="false">
+        <pkg-ref id="de.mtb11.iMac2011SleepPatch.CAT.pkg"/>
+    </choice>
+    <choice id="choice80" title="Nvidia iMac BacklightFixup patch (10.15++)" description="Nvidia iMac BacklightFixup NEW NVIDIA Graphics for macOS Catalina 10.15++ (*****) Support Graphics Intel HD 3000. Support: iMac 12,2 with metal enabled Nvidia GPU  Install /System/Library/Extensions/ AppleBacklightFixup.kext
+For macOS Catalina 10.15.4+ Install /Library/Preferences/com.apple.security.libraryvalidation.plist
+NOTE: Make sure for this version that the SIP is totally disabled!" start_selected="false">
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.AppleBacklightFixup.pkg"/>
+    </choice>
+    <choice id="choice81" title="AMD iMac 2001 Sleep patch (10.15++)" description="AMD Baffin/Polaris iMac NEW Graphics for macOS Catalina 10.15++ (*****) Support Graphics Intel HD 3000. Support: iMac 12,x with metal enabled AMD GPU  Install /System/Library/Extensions/ AppleIntelSNBGraphicsFB.kext
+For macOS Catalina 10.15.4+ Install /Library/Preferences/com.apple.security.libraryvalidation.plist
+NOTE: Make sure for this version that the SIP is totally disabled!" start_selected="false">
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.AMD.pkg"/>
+    </choice>
+    <choice id="choice82" title="iMac 2011 Nvidia AppleGVA.framework patch (10.15++)" description="iMac 2011 Sleep patch This is a Fix for Graphics Intel HD 3000 and NEW NVIDIA Graphics for macOS Catalina 10.15++ (*****) Support Graphics Intel HD 3000. Support: iMac 12,x with metal enabled Nvidia GPU  Install /System/Library/PrivateFrameworks/AppleGVA.framework
+For macOS Catalina 10.15.4+ Install /Library/Preferences/com.apple.security.libraryvalidation.plist
+NOTE: Make sure for this version that the SIP is totally disabled!" start_selected="false">
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.GPUFramework.pkg"/>
+    </choice>
+     <choice id="choice90" title="FakeSMC HWMonitor patch (10.15++)" description="FakeSMC HW Monitor sensor montoring for macOS Catalina 10.15++ (*****) Support Graphics Intel HD 3000. Support: iMac 11,x and 12,x with metal enabled GPU  Install /System/Library/Extensions/ FakeSMC_CPUSensors.kext FakeSMC_GPUSensors.kext FakeSMCKeyStore.kext
+For macOS Catalina 10.15.4+ Install /Library/Preferences/com.apple.security.libraryvalidation.plist
+NOTE: Make sure for this version that the SIP is totally disabled!" start_selected="false">
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.FakeSMC.pkg"/>
+    </choice>
+    <choice id="choice91" title="vit9696 Lilu/Whatevergreen patch (10.15++)" description="iMac backlight/iGPU/AMD support patch This is for NEW AMD/NVIDIA Graphics for macOS Catalina 10.15++ (*****) Support: iMac 11,x and 12,x with metal enabled GPU w/o OpenCore Install /System/Library/Extensions/ Lilu.kext WhateverGreen.kext
+ For macOS Catalina 10.15.4+ Install /Library/Preferences/com.apple.security.libraryvalidation.plist
+ NOTE: Make sure for this version that the SIP is totally disabled!" start_selected="false">
+     <pkg-ref id="de.mtb11.iMac2011SleepPatch.VIT9696.pkg"/>
+     </choice>
+    
+    
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.GPUFramework.pkg" installKBytes="991" version="1.0" auth="Root" onConclusion="RequireRestart">#gpuframework.pkg</pkg-ref>
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.HD3000.pkg" installKBytes="4000" version="1.0" auth="Root" onConclusion="RequireRestart">#HD3000.pkg</pkg-ref>
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.CAT.pkg" installKBytes="120" version="1.0" auth="Root" onConclusion="RequireRestart">#CAT.pkg</pkg-ref>
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.AMD.pkg" installKBytes="117" version="1.0" auth="Root" onConclusion="RequireRestart">#AMD.pkg</pkg-ref>
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.FakeSMC.pkg" installKBytes="88" version="1.0" auth="Root" onConclusion="RequireRestart">#FakeSMC.pkg</pkg-ref>
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.VIT9696.pkg" installKBytes="271" version="1.0" auth="Root" onConclusion="RequireRestart">#VIT9696.pkg</pkg-ref>
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.AppleBacklightFixup.pkg" installKBytes="42" version="1.0" auth="Root" onConclusion="RequireRestart">#AppleBacklightFixup.pkg</pkg-ref>
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.Install.pkg" installKBytes="0" version="1.0" auth="Root" onConclusion="RequireRestart">#install.pkg</pkg-ref>
+</installer-script>
