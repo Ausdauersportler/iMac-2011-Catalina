@@ -15,7 +15,7 @@
 
 #### Follow Video ⬇ How to Create the App (different package, original author, but identical process)
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/100969381-06c8e280-3501-11eb-9e11-ad9d734eff3a.png)](https://youtu.be/h18ie8uTulM)
-#### Follow Video ⬇ Install iMac 2011 Sleep Patch (different package, original author, but nearls identical process)
+#### Follow Video ⬇ Install iMac 2011 Sleep Patch (different package, original author, but nearly identical process)
 [![Modular Image Creation](https://user-images.githubusercontent.com/6248794/100969381-06c8e280-3501-11eb-9e11-ad9d734eff3a.png)](https://youtu.be/pP-j-RxOths)
 
 #### Installation details:
