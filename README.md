@@ -9,7 +9,7 @@
 
 #### Warnings:
 ##### 1 :this package replaces system files in /S/L/E and could render your system unbootable.
-##### 2 :in case you sytem became unbootable boot into recovery and enter kextcache -i / (or mount point of your boot volume) and kcditto in terminal
+##### 2 :in case you sytem became unbootable just boot into recovery and enter first "kextcache -i /your boot volume path" and then "/your boot volume pat/usr/sbin/kcditto" in terminal (without using the marks).
 
 
 #### How to download ready complete source and build the package
