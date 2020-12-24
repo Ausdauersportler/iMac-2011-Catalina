@@ -36,7 +36,7 @@ This selection assumes the user will use OpenCore to enable boot screen and AMD 
 
 #### Installation selection for iMac systems with other Kepler GPU:
 
-This selection assumes no use of OpenCore at all
+This selection assumes no use of OpenCore at all. Installing FakeSMC is optional.
 
 ![Modular Image Creation](https://github.com/Ausdauersportler/iMac-2011-Catalina/blob/main/Documentation/CATALINA-SLEEP-PATCH-NVIDIA.png)
 
@@ -49,6 +49,8 @@ This selection assumes no use of the iMacPro1,1 board-id within the Platforminfo
 
 #### Some more information:
 [2011 iMac Graphics Card Upgrade](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/)
+
+Installation of the FakeSMC package is optional. It is just needed to enable harware monitoring using the [HWMonitor app](https://github.com/kzlekk/HWSensors).
 
 #### Installation details:
 [Catalina Package Installer](https://forums.macrumors.com/threads/2011-imac-graphics-card-upgrade.1596614/page-421?post=29144691#post-29144691)
