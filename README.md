@@ -24,15 +24,27 @@ Within the Documents folder you will find pictures showing the package selection
 
 #### Installation selection for iMac systems with Kepler K610M, K1100M, and K2100M GPU:
 
+This selection assumes the user will use OpenCore to enable brightness control.
+
 ![Modular Image Creation](https://github.com/Ausdauersportler/iMac-2011-Catalina/blob/main/Documentation/K610M-K1100M-K2100M.png)
 
 #### Installation selection for iMac systems with AMD Polaris/Ellesmere GPU:
+
+This selection assumes the user will use OpenCore to enable boot screen and AMD video acceleration (by spoofing the iMacPro1,1 board-id)
 
 ![Modular Image Creation](https://github.com/Ausdauersportler/iMac-2011-Catalina/blob/main/Documentation/CATALINA-SLEEP-PATCH-AMD.png)
 
 #### Installation selection for iMac systems with other Kepler GPU:
 
+This selection assumes no use of OpenCore at all
+
 ![Modular Image Creation](https://github.com/Ausdauersportler/iMac-2011-Catalina/blob/main/Documentation/CATALINA-SLEEP-PATCH-NVIDIA.png)
+
+#### Installation selection for iMac systems with AMD Polaris/Ellesmere GPU (no iMacPro1,1 spoofing):
+
+This selection assumes no use of the iMacPro1,1 board-id within the Platforminfo section of OpenCore
+
+![Modular Image Creation](https://github.com/Ausdauersportler/iMac-2011-Catalina/blob/main/Documentation/CATALINA-SLEEP-PATCH-AMD-NO-OC.png)
 
 
 #### Some more information:
