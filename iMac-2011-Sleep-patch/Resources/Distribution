@@ -28,9 +28,14 @@
             <line choice="choice90"/>
             <line choice="choice91"/>
         </line>
+        <line choice="choice44">
+        </line>
     </choices-outline>
     <choice id="choice43" title="iMac 2011 Sleep patch" description="iMac 2011 Sleep patch This is a Fix for Graphics Intel HD 3000 and fix NEW NVIDIA Graphics for macOS Catalina 10.15++ (*****) Support Graphics Intel HD 3000. Support: iMac 12,2 with metal enabled GPU" start_selected="false">
         <pkg-ref id="de.mtb11.iMac2011SleepPatch.Install.pkg"/>
+    </choice>
+    <choice id="choice44" title="Uninstall option" description="removes all previous installed files" start_selected="false">
+        <pkg-ref id="de.mtb11.iMac2011SleepPatch.Uninstall.pkg"/>
     </choice>
     <choice id="choice77" title="iMac 2011 Sleep patch (10.14++)" description="iMac 2011 Sleep patch This is a Fix for Graphics Intel HD 3000 and NEW NVIDIA Graphics for macOS Mojave and Catalina 10.14++ (*****) Support Graphics Intel HD 3000. Support: iMac 12,x with metal enabled Nvidia GPU  Install /System/Library/Extensions/ AppleIntelHD3000Graphics.kext AppleIntelHD3000GraphicsGA.plugin AppleIntelHD3000GraphicsGLDriver.bundle AppleIntelHD3000GraphicsVADriver.bundle AppleIntelSNBGraphicsFB.kext AppleIntelSNBVA.bundle IOSurface.kext AppleMCCSControl.kext
 For macOS Catalina 10.15.4+ Install /Library/Preferences/com.apple.security.libraryvalidation.plist
@@ -77,4 +82,5 @@ NOTE: Make sure for this version that the SIP is totally disabled!" start_select
     <pkg-ref id="de.mtb11.iMac2011SleepPatch.VIT9696.pkg" installKBytes="271" version="1.0" auth="Root" onConclusion="RequireRestart">#VIT9696.pkg</pkg-ref>
     <pkg-ref id="de.mtb11.iMac2011SleepPatch.AppleBacklightFixup.pkg" installKBytes="42" version="1.0" auth="Root" onConclusion="RequireRestart">#AppleBacklightFixup.pkg</pkg-ref>
     <pkg-ref id="de.mtb11.iMac2011SleepPatch.Install.pkg" installKBytes="0" version="1.0" auth="Root" onConclusion="RequireRestart">#install.pkg</pkg-ref>
+    <pkg-ref id="de.mtb11.iMac2011SleepPatch.Uninstall.pkg" installKBytes="0" version="1.0" auth="Root" onConclusion="RequireRestart">#uninstall.pkg</pkg-ref>
 </installer-script>

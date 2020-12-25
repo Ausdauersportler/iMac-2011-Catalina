@@ -38,11 +38,22 @@ pkgbuild --root ./HD3000 --identifier de.mtb11.iMac2011SleepPatch.HD3000.pkg --v
 # add ons for sleep on Catalina with iMac 12,x
 pkgbuild --root ./CAT --identifier de.mtb11.iMac2011SleepPatch.CAT.pkg --version 1 --install-location /tmp ./iMac2011Sleep-patch/BUILD-PACKAGE/CAT.pkg
 
+# uninstall package
+pkgbuild --root ./Uninstall --scripts ./Script --identifier de.mtb11.iMac2011SleepPatch.Install.pkg --version 1.0 --install-location /tmp ./iMac2011Sleep-patch/BUILD-PACKAGE/Uninstall.pkg
+
+
 # main (shell) package
 pkgbuild --root ./Install --scripts ./Script --identifier de.mtb11.iMac2011SleepPatch.Install.pkg --version 1.0 --install-location /tmp ./iMac2011Sleep-patch/BUILD-PACKAGE/Install.pkg
 
 Sleep 2
 # Expand the Packages with pkgutil
+#
+# to confuse the coder there is a constant change in spelling and
+# referencing packages, especially the Install.pkg will be unpacked into
+# install.pkg and referenced from the DISTRIBUTION file as #install.pkg
+#
+# same for Uninstall.pkg -> uninstall.pkg -> #uninstall.pkg
+#
 pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/GPUFramework.pkg /tmp/PackageDIR/gpuframework.pkg
 pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/HD3000.pkg /tmp/PackageDIR/HD3000.pkg
 pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/AMD.pkg /tmp/PackageDIR/AMD.pkg
@@ -50,6 +61,7 @@ pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/CAT.pkg /tmp/PackageDIR/CAT
 pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/FakeSMC.pkg /tmp/PackageDIR/FakeSMC.pkg
 pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/AppleBacklightFixup.pkg /tmp/PackageDIR/AppleBacklightFixup.pkg
 pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/VIT9696.pkg /tmp/PackageDIR/VIT9696.pkg
+pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/Uninstall.pkg /tmp/PackageDIR/uninstall.pkg
 pkgutil --expand ./iMac2011Sleep-patch/BUILD-PACKAGE/Install.pkg /tmp/PackageDIR/install.pkg
 
 Sleep 2
