@@ -9,7 +9,7 @@
 
 #### Warnings:
 ##### 1 :this package replaces system files in /S/L/E and could render your system unbootable.
-##### 2 :in case you sytem became unbootable just boot into recovery and enter first "kextcache -i /your boot volume path" and then "/your boot volume pat/usr/sbin/kcditto" in terminal (without using the marks).
+##### 2 :in case you sytem became unbootable just boot into recovery and enter first ```kextcache -i /your boot volume path``` and then ```/your boot volume path/usr/sbin/kcditto``` in terminal and replace the path according to your current installation. Just to make things clear: If your installation went to the normal root / then the first command becomes ```kextcache -i /```,  the second ```/usr/sbin/kcditto``` - everthing clear?
 
 
 #### How to download ready complete source and build the package
@@ -24,7 +24,7 @@ Within the Documents folder you will find pictures showing the package selection
 
 #### Installation selection for iMac systems with Kepler GPU needing OpenCore to provide brightness control:
 
-This selection assumes the user will use OpenCore to enable brightness control. Applies to the following GPU: K610M, K1000M, K2000M, K1100M, K2100M, GTX675M, GTX770M and GTX788M (780M using Santa's Little Helper vBIOS).
+This selection assumes the user will use OpenCore to enable brightness control. Applies to the following GPU: K610M, K1000M, K2000M, K1100M, K2100M, GTX675M, GTX770M and GTX780M (780M using Santa's Little Helper vBIOS).
 
 ![Modular Image Creation](https://github.com/Ausdauersportler/iMac-2011-Catalina/blob/main/Documentation/K610M-K1100M-K2100M.png)
 
