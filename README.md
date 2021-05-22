@@ -22,7 +22,7 @@ Support Graphics Intel HD 3000 and Nvidia Kepler GPU and AMD Polaris/Ellesmere G
 
 Within the Documents folder you will find pictures showing the package selection for each GPU type.
 
-#### Installation selection for iMac systems with Kepler GPU nbeeding OpenCore to provide brightness control:
+#### Installation selection for iMac systems with Kepler GPU needing OpenCore to provide brightness control:
 
 This selection assumes the user will use OpenCore to enable brightness control. Applies to the following GPU: K610M, K1000M, K2000M, K1100M, K2100M, GTX675M, GTX770M and GTX788M (780M using Santa's Little Helper vBIOS).
 
